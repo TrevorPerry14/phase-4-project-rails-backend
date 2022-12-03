@@ -1,0 +1,2 @@
+class TimeTrialsController < ApplicationController
+end
