@@ -1,3 +1,3 @@
 class DriverSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :age, :country
 end
