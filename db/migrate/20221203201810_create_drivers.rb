@@ -6,6 +6,8 @@ class CreateDrivers < ActiveRecord::Migration[6.1]
       t.string :country
       t.string :username
       t.string :password
+      t.string :car
+      t.string :bio
 
       t.timestamps
     end

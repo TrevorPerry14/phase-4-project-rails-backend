@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2022_12_03_202008) do
     t.string "country"
     t.string "username"
     t.string "password"
+    t.string "car"
+    t.string "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -37,6 +39,8 @@ ActiveRecord::Schema.define(version: 2022_12_03_202008) do
     t.string "name"
     t.string "location"
     t.string "length"
+    t.string "year_of_construction"
+    t.string "history"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

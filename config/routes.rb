@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Leave this here to help deploy your app later!
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 
-  resources :drivers, only: [:index, :show]
-  resources :tracks, only: [:index, :show]
-  resources :time_trials, only: [:index]
+  resources :drivers, only: [:index, :show, :create, :destroy, :update]
+  resources :tracks, only: [:index, :show, :create, :update, :delete]
+  resources :time_trials, only: [:index, :create, :delete, :update]
 end
 

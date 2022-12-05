@@ -11,7 +11,7 @@ puts "Deleting Time_Trials..."
 
 
 puts "Creating Drivers!"
-20.times { 
+10.times { 
     country = ["France", "Germany", "Spain", "Portugal", "Italy", "India", "United Kingdonm", "Mexico", "USA"]
     Driver.create(
         name: Faker::FunnyName.name,
@@ -19,27 +19,36 @@ puts "Creating Drivers!"
         country: country.sample,
         username: "#{Driver.name}123$",
         password: Faker::Team.state,
+        car: "car goes here",
+        bio: "bio goes here"
     )
 }
 
 puts "Creating Tracks"
 
 Track.create(
-    name: "Bahrain International Circut",
-    location: "Sakhir Bahrain",
-    length: "5.412 km"
+    name: "Rainbow Road",
+    location: "Deep Space",
+    length: "3.5 km",
+    year_of_construction: "1992",
+    history: "The final course in all Mario Kart games, and a true test of skill needing speed as well as finese to succed."
 )
 
 Track.create(
-    name: "Silverstone Circut",
-    location: "Northamptonshire England",
-    length: "5.891 km" 
+    name: "Koopa Troopa Beach",
+    location: "Koopa Troopa Beach",
+    length: "4.75",
+    year_of_construction: "1996",
+    history: "Named after the Koopa Troopa rock formation at the start line. This is a great scenic race that will have a nice view, just watch out for the crabs! Also the first course to ever feature a shortcut."
 )
 
 Track.create(
-    name: "Circut Of The Americas",
-    location: "Austin, TX USA",
-    length: "5.514 km"
+    name: "DK Summit",
+    location: "DK Mountain Resort",
+    length: "6.25 km",
+    year_of_construction: "2008",
+    history: "At the summit near a very popular mountain resort, you will reach very fast speeds as well as steep declines on your way to the bottom. Be careful not to hit the skiers visiting the resort."
+
 )
 
 puts "creating times..."
