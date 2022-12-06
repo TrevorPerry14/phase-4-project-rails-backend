@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   resources :drivers, only: [:index, :show, :create, :destroy, :update]
   resources :tracks, only: [:index, :show, :create, :update, :delete]
   resources :time_trials, only: [:index, :create, :delete, :update]
+
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy" 
 end
 
