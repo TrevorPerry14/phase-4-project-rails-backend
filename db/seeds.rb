@@ -18,7 +18,7 @@ puts "Creating Drivers!"
         age: "#{rand(24..40)} years old",
         country: country.sample,
         username: "#{Driver.name}123$",
-        password: Faker::Team.state,
+        password_digest: Faker::Team.state,
         car: "car goes here",
         bio: "bio goes here"
     )
