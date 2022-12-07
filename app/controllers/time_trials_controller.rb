@@ -1,9 +1,9 @@
 class TimeTrialsController < ApplicationController
 
-    before_action :authorize
+    # before_action :authorize
 
     def index
-        render json: TimeTrial.all
+        render json: TimeTrial.all.order(:date).reverse
     end
 
     def create 

@@ -3,10 +3,14 @@ class DriversController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     before_action :select_driver, only: [:show, :update]
-    before_action :authorize
+    # before_action :authorize
 
     def index 
         render json: Driver.all
+    end
+
+    def driver_times
+        render json: Driver.all, serializer: DriverTimesSerializer
     end
 
     def show 
@@ -40,7 +44,7 @@ class DriversController < ApplicationController
     end
 
     def driver_params 
-        params.permit(:username, :password, :name, :age, :country)
+        params.permit( :name, :age, :country, :username, :password, :car, :bio)
     end
 
     def render_not_found_response 

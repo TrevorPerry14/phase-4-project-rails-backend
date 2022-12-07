@@ -4,10 +4,11 @@ class CreateDrivers < ActiveRecord::Migration[6.1]
       t.string :name
       t.integer :age
       t.string :country
-      t.string :username
-      t.string :password_digest
       t.string :car
       t.string :bio
+      t.string :username
+      t.string :password_digest
+
 
       t.timestamps
     end
