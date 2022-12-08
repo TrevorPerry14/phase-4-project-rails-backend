@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   # get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 
   resources :drivers, only: [:index, :show, :create, :destroy, :update]
-  resources :tracks, only: [:index, :show, :create, :update, :delete]
-  resources :time_trials, only: [:index, :create, :delete, :update]
+  resources :tracks, only: [:index, :show, :create, :update, :destroy]
+  resources :time_trials, only: [:index, :create]
 
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy" 

@@ -1,5 +1,5 @@
 class DriverTimesSerializer < ActiveModel::Serializer
-  attributes :id, :name, :username, :age, :country, :car, :bio
+  attributes :id, :name, :username, :age, :country, :car, :bio, :admin
   has_many :time_trials
 
   def time_trials 

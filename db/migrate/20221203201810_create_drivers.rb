@@ -8,6 +8,7 @@ class CreateDrivers < ActiveRecord::Migration[6.1]
       t.string :bio
       t.string :username
       t.string :password_digest
+      t.boolean :admin
 
 
       t.timestamps
