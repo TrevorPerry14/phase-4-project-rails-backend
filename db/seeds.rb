@@ -11,6 +11,7 @@ puts "Deleting Time_Trials..."
 
 
 puts "Creating Drivers!"
+Driver.create(name: "admin", age: 0, country: "admin", username: "admin", password: "12345", car: "admin", bio: "admin", admin: true)
 10.times { 
     country = ["France", "Germany", "Spain", "Portugal", "Italy", "India", "United Kingdonm", "Mexico", "USA"]
     Driver.create(
@@ -20,7 +21,8 @@ puts "Creating Drivers!"
         username: "#{Driver.name}123$",
         password: Faker::Team.state,
         car: "car goes here",
-        bio: "bio goes here"
+        bio: "bio goes here",
+        admin: false
     )
 }
 

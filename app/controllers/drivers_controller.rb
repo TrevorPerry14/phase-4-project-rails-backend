@@ -44,7 +44,7 @@ class DriversController < ApplicationController
     end
 
     def driver_params 
-        params.permit( :name, :age, :country, :username, :password, :car, :bio)
+        params.permit( :name, :age, :country, :username, :password, :car, :bio, :admin)
     end
 
     def render_not_found_response 

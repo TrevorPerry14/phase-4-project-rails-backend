@@ -2,7 +2,7 @@ class TracksController < ApplicationController
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
-    before_action :select_track, only: [:show, :update]
+    before_action :select_track, only: [:show, :update, :destroy]
     # before_action :authorize
 
     def index 
@@ -25,6 +25,12 @@ class TracksController < ApplicationController
         else
             render_not_found_response
         end
+    end
+
+    def destroy 
+       track = Track.find_by(id: params[:id])
+       track.destroy
+       head :no_content
     end
 
     private 
