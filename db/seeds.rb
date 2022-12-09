@@ -12,15 +12,15 @@ puts "Deleting Time_Trials..."
 
 puts "Creating Drivers!"
 Driver.create(name: "Mario", age: 41, country: "Muchroom Kingdom", username: "Mario64", password: "12345", car: "Standard Kart", bio: "Small town plumber ", admin: true)
-Driver.create(name: "Luigi", age: 39, country: "Muchroom Kingdom", username: "Luigi#1", password: "12345", car: "Standard Bike", bio: "Living in Maros Shadow", admin: false)
-Driver.create(name: "Peach", age: 37, country: "Muchroom Kingdom", username: "PrincessPeach", password: "12345", car: "Classic Dragster", bio: "", admin: false)
-Driver.create(name: "Daisy", age: 33, country: "Sarasaland", username: "Daisy", password: "12345", car: "Mach Bike", bio: "", admin: false)
+Driver.create(name: "Luigi", age: 39, country: "Muchroom Kingdom", username: "Luigi#1", password: "12345", car: "Standard Bike", bio: "Living in Marios Shadow", admin: false)
+Driver.create(name: "Peach", age: 37, country: "Muchroom Kingdom", username: "PrincessPeach", password: "12345", car: "Classic Dragster", bio: "Peach", admin: false)
+Driver.create(name: "Daisy", age: 33, country: "Sarasaland", username: "Daisy", password: "12345", car: "Mach Bike", bio: "Daisy", admin: false)
 Driver.create(name: "Bowser", age: 37, country: "Bowsers Castle", username: "KingKoopa", password: "12345", car: "Flame Flyer", bio: "Mario can't stop me forever", admin: false)
 Driver.create(name: "Wario", age: 30, country: "Muchroom Kingdom", username: "Wario", password: "12345", car: "Wario Bike", bio: "Mario Anti Hero", admin: false)
 Driver.create(name: "Waluigi", age: 22, country: "Muchroom Kingdom", username: "WAHHHHHHH", password: "12345", car: "Mach Bike", bio: "Still not in Smash Bros", admin: false)
 Driver.create(name: "Donkey Kong", age: 41, country: "Donkey Kong Country", username: "DonkeyKong", password: "12345", car: "Offroader", bio: "DK Donkey Kong!!", admin: false)
 Driver.create(name: "Yoshi", age: 32, country: "Yoshi's Island", username: "Yoshi", password: "12345", car: "Mach Bike", bio: "Yoshi Yoshiiii", admin: false)
-Driver.create(name: "Toad", age: 37, country: "Muchroom Kingdom", username: "Toad", password: "12345", car: "Bit Bike", bio: "Humble Servant", admin: false)
+Driver.create(name: "Toad", age: 37, country: "Muchroom Kingdom", username: "Toad", password: "12345", car: "Bit Bike", bio: "Toad", admin: false)
 # 10.times { 
 #     country = ["France", "Germany", "Spain", "Portugal", "Italy", "India", "United Kingdonm", "Mexico", "USA"]
 #     Driver.create(
