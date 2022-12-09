@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(version: 2022_12_03_202008) do
     t.string "name"
     t.integer "age"
     t.string "country"
-    t.string "username"
-    t.string "password"
     t.string "car"
     t.string "bio"
     t.string "username"

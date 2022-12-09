@@ -1,7 +1,5 @@
 class TimeTrialsController < ApplicationController
 
-    # before_action :authorize
-
     def index
         render json: TimeTrial.all.order(:date).reverse
     end
