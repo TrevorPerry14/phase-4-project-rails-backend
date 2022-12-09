@@ -1,3 +1,3 @@
 class TrackSerializer < ActiveModel::Serializer
-  attributes :id, :name, :location, :length
+  attributes :id, :name, :location, :length, :description
 end

@@ -1,5 +1,5 @@
 class TrackTimesSerializer < ActiveModel::Serializer
-  attributes :id, :name, :location, :length
+  attributes :id, :name, :location, :length, :description
   has_many :time_trials
 
   def time_trials 
